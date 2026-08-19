@@ -1,122 +1,450 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Geiciely de Almeida da Silva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Geiciely de Almeida | Jovem Aprendiz</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta
+        name="description"
+        content="Portfólio profissional de Geiciely de Almeida da Silva."
+    >
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- HEADER -->
 
-<h1>Geiciely de Almeida da Silva</h1>
+    <header class="header">
 
-<p>Jovem Aprendiz</p>
+        <nav class="navbar">
 
-<button id="tema">🌙 Modo Escuro</button>
+            <a href="#inicio" class="logo">
+                <span>G</span>
+                Geiciely
+            </a>
 
-</header>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
 
-<div class="container">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-<section class="card">
+            <button class="theme-toggle" id="themeToggle" aria-label="Alterar tema">
+                <i class="fas fa-moon"></i>
+            </button>
 
-<h2>Contato</h2>
+        </nav>
 
-<p><i class="fa-solid fa-phone"></i> (41) 99836-7063</p>
+    </header>
 
-<p><i class="fa-solid fa-envelope"></i> geicielydasilva476@gmail.com</p>
 
-<p><i class="fa-solid fa-location-dot"></i> Vila Garcia - Paraná</p>
+    <main>
 
-</section>
+        <!-- HERO -->
 
-<section class="card">
+        <section class="hero" id="inicio">
 
-<h2>Objetivo</h2>
+            <div class="hero-content">
 
-<p>
-Busco minha primeira oportunidade como Jovem Aprendiz,
-desenvolvendo minhas habilidades profissionais e contribuindo
-para o crescimento da empresa.
-</p>
+                <p class="hello">
+                    Olá, eu sou
+                </p>
 
-</section>
+                <h1>
+                    Geiciely de
+                    <span>Almeida</span>
+                </h1>
 
-<section class="card">
+                <h2>
+                    <span id="typing"></span>
+                    <span class="cursor">|</span>
+                </h2>
 
-<h2>Formação</h2>
+                <p class="hero-description">
+                    Em busca da minha primeira oportunidade profissional,
+                    com vontade de aprender, crescer e contribuir com a equipe.
+                </p>
 
-<p><strong>Ensino Médio</strong></p>
+                <div class="hero-buttons">
 
-<p>2º Ano - Cursando</p>
+                    <a href="#contato" class="btn primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Entrar em contato
+                    </a>
 
-<p>Colégio Estadual Prof. Carmen Costa Adriano</p>
+                    <a href="curriculo.pdf" class="btn secondary" download>
+                        <i class="fas fa-download"></i>
+                        Baixar currículo
+                    </a>
 
-</section>
+                </div>
 
-<section class="card">
+            </div>
 
-<h2>Qualificações</h2>
+            <div class="hero-card">
 
-<ul>
+                <div class="profile-circle">
+                    <i class="fas fa-user"></i>
+                </div>
 
-<li>Boa comunicação</li>
+                <h3>Jovem Aprendiz</h3>
 
-<li>Trabalho em equipe</li>
+                <p>
+                    Pronta para novos desafios
+                </p>
 
-<li>Organização</li>
+                <div class="status">
+                    <span></span>
+                    Disponível para oportunidades
+                </div>
 
-<li>Pontualidade</li>
+            </div>
 
-<li>Facilidade para aprender</li>
+        </section>
 
-</ul>
 
-</section>
+        <!-- SOBRE -->
 
-<section class="card">
+        <section class="section" id="sobre">
 
-<h2>Idiomas</h2>
+            <div class="section-title">
+                <span>01</span>
+                <h2>Sobre mim</h2>
+            </div>
 
-<p>🇺🇸 Inglês - Básico</p>
+            <div class="about-grid">
 
-<p>🇪🇸 Espanhol - Básico</p>
+                <div class="about-text reveal">
 
-</section>
+                    <p>
+                        Busco minha primeira oportunidade como
+                        <strong>Jovem Aprendiz</strong>, desenvolvendo
+                        minhas habilidades profissionais e contribuindo
+                        para o crescimento da empresa.
+                    </p>
 
-<section class="card">
+                    <p>
+                        Sou uma pessoa organizada, comunicativa e
+                        responsável, com facilidade para aprender
+                        coisas novas e trabalhar em equipe.
+                    </p>
 
-<h2>Cursos</h2>
+                </div>
 
-<p>✔ Segurança da Informação Básico</p>
+                <div class="info-card reveal">
 
-<p>Conclusão: 23/09/2023</p>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
 
-</section>
+                        <div>
+                            <small>Localização</small>
+                            <strong>Vila Garcia - Paraná</strong>
+                        </div>
+                    </div>
 
-<section class="card">
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
 
-<h2>Currículo</h2>
+                        <div>
+                            <small>Escolaridade</small>
+                            <strong>Ensino Médio — 2º ano</strong>
+                        </div>
+                    </div>
 
-<a href="assets/curriculo.pdf" target="_blank">
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
 
-<button>Baixar Currículo</button>
+                        <div>
+                            <small>Objetivo</small>
+                            <strong>Primeira oportunidade profissional</strong>
+                        </div>
+                    </div>
 
-</a>
+                </div>
 
-</section>
+            </div>
 
-</div>
+        </section>
 
-<script src="script.js"></script>
+
+        <!-- FORMAÇÃO -->
+
+        <section class="section alternate" id="formacao">
+
+            <div class="section-title">
+                <span>02</span>
+                <h2>Formação</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Atualmente
+                        </span>
+
+                        <h3>Ensino Médio</h3>
+
+                        <p>
+                            2º Ano — Cursando
+                        </p>
+
+                        <strong>
+                            Colégio Estadual Prof. Carmen Costa Adriano
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+
+        <section class="section" id="habilidades">
+
+            <div class="section-title">
+                <span>03</span>
+                <h2>Minhas habilidades</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <i class="fas fa-comments"></i>
+                    <h3>Comunicação</h3>
+                    <p>Boa comunicação e facilidade para interagir.</p>
+                    <div class="skill-bar">
+                        <span style="width: 85%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <i class="fas fa-users"></i>
+                    <h3>Trabalho em equipe</h3>
+                    <p>Colaboração e respeito às ideias da equipe.</p>
+                    <div class="skill-bar">
+                        <span style="width: 90%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <i class="fas fa-list-check"></i>
+                    <h3>Organização</h3>
+                    <p>Compromisso com tarefas e responsabilidades.</p>
+                    <div class="skill-bar">
+                        <span style="width: 88%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <i class="fas fa-clock"></i>
+                    <h3>Pontualidade</h3>
+                    <p>Responsabilidade com horários e compromissos.</p>
+                    <div class="skill-bar">
+                        <span style="width: 95%"></span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Aprendizado</h3>
+                    <p>Facilidade para aprender novas atividades.</p>
+                    <div class="skill-bar">
+                        <span style="width: 92%"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IDIOMAS -->
+
+        <section class="section alternate">
+
+            <div class="section-title">
+                <span>04</span>
+                <h2>Idiomas</h2>
+            </div>
+
+            <div class="language-grid">
+
+                <div class="language-card reveal">
+
+                    <div class="language-icon">
+                        🇺🇸
+                    </div>
+
+                    <div>
+                        <h3>Inglês</h3>
+                        <p>Básico</p>
+                    </div>
+
+                    <span class="level">Básico</span>
+
+                </div>
+
+                <div class="language-card reveal">
+
+                    <div class="language-icon">
+                        🇪🇸
+                    </div>
+
+                    <div>
+                        <h3>Espanhol</h3>
+                        <p>Básico</p>
+                    </div>
+
+                    <span class="level">Básico</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CURSOS -->
+
+        <section class="section" id="cursos">
+
+            <div class="section-title">
+                <span>05</span>
+                <h2>Cursos</h2>
+            </div>
+
+            <div class="course-card reveal">
+
+                <div class="course-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+
+                <div class="course-info">
+
+                    <span>Curso concluído</span>
+
+                    <h3>
+                        Segurança da Informação Básico
+                    </h3>
+
+                    <p>
+                        Conclusão: 23/09/2023
+                    </p>
+
+                </div>
+
+                <i class="fas fa-check-circle course-check"></i>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contact-section" id="contato">
+
+            <div class="contact-content">
+
+                <span class="contact-label">
+                    VAMOS CONVERSAR?
+                </span>
+
+                <h2>
+                    Estou pronta para
+                    <span>novos desafios.</span>
+                </h2>
+
+                <p>
+                    Se você está procurando alguém com vontade de
+                    aprender e crescer profissionalmente, entre em contato.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="mailto:geicielydasilva476@gmail.com"
+                        class="contact-btn"
+                    >
+                        <i class="fas fa-envelope"></i>
+                        E-mail
+                    </a>
+
+                    <a
+                        href="tel:+5541998367063"
+                        class="contact-btn"
+                    >
+                        <i class="fas fa-phone"></i>
+                        Telefone
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span>
+            Geiciely de Almeida da Silva
+        </p>
+
+        <p>
+            Desenvolvido com dedicação 💜
+        </p>
+
+    </footer>
+
+
+    <button class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
